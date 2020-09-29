@@ -1,0 +1,19 @@
+//- extends header.pug
+
+//- block style
+    //- style      
+        //- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        //- include ../static/composeStyle.css
+
+//- block content
+include ../template/header.pug
+div.container
+        h2 Compose
+        form(action="/compose", method="post")
+            label(for="basic-url") Title
+            input(type="text",class="text",name="text")
+            .form-group
+                label(for="exampleFormControlTextarea1") Post
+                textarea#exampleFormControlTextarea1.form-control(rows="3",name="textarea")
+            button#btn(type="submit") Publish
+include ../template/footer.pug

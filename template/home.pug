@@ -1,0 +1,51 @@
+
+//- extends header.pug
+
+//- extends footer.pug
+include ../template/header.pug
+
+//- block content
+div.compose
+  div.img-com 
+    a(href="/compose")
+      img(src="/static/plus2.jpg", alt="Compose")
+      span.comp Compose
+div.container
+    h1=title
+    p=cont
+    hr
+    -
+      const da=data
+    each item in da
+        h3=item.text
+        p.para=item.textarea.substring(0,100)+'...'
+          a(href=`/post/${item.text}`) Read More
+        hr
+include ../template/footer.pug
+//- extends footer.pug
+    
+    //- script
+    //-   include script.js
+    //- extends base.pug
+
+//- doctype html
+//- html
+//-   head
+//-     title Daily Journal
+//-     block style
+//-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+//-     style
+//-       include ..\static\styles.css
+      
+//-   body
+//-     nav.navbar.navbar-expand-lg.navbar-primary.bg-light
+//-       a.navbar-brand(href="/") DAILY JOURNAL
+//-       button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
+//-         span.navbar-toggler-icon
+//-       #navbarNavAltMarkup.collapse.navbar-collapse
+//-         .navbar-nav
+//-           ul.nav.navbar-nav.navbar-right
+//-             //- li #[a(href="/") Home]
+//-             li #[a.nav-link.active(href="/") HOME] 
+//-             li #[a.nav-link(href="/about") ABOUT US]
+//-             li #[a.nav-link(href="/contact") CONTACT US]

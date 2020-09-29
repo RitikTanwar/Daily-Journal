@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+.navbar {
+    background-color: rgb(227, 201, 253);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+    padding-left: 20vh;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.nav li a:hover {
+    color: rgb(13, 13, 129);
+    font-weight: bolder ;
+    /* font-size: 1.2rem; */
+}
+
+.nav li{
+    padding: 0 3vh;
+}
+/* .container{
+    margin: 0 15rem;
+} */
+.nav{
+    /* padding:0 5rem; */
+    margin-left: 80vh;
+}
+.img-com{
+    display: inline-block;
+    /* height: 0.5rem; */
+    padding: 5px 5px;
+    margin: 5px;
+}
+.img-com a img{
+    height: 2rem;
+}
+.compose{
+    /* margin-top: 1rem; */
+    display: inline-block;
+    width: 10rem;
+    border: 2px solid red;
+    border-radius: 2rem;
+    font-size: 1.5rem;  
+    margin: 1rem 2rem;
+}
+.text{
+    display: block;
+}
+
+#btn{
+    background-color: rgb(109, 109, 224);
+    width: 15vh;
+    border-radius: 10px;
+}
+
+/* .para{
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 70%;
+} */
+
+.footer-padding {
+    margin-top: 20px;
+    /* padding: top 20px ; */
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
